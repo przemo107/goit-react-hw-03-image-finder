@@ -6,11 +6,11 @@ class ImageGalleryItem extends Component {
     const { id, imgSrc, openModal, largeImgSrc } = this.props;
 
     return (
-      <li className={css.ImageGalleryItem}>
+      <li className={css.imageGalleryItem}>
         <img
           src={imgSrc}
           alt={id}
-          className={css.ImageGalleryItem}
+          className={css.imageGalleryItemImage}
           onClick={() => openModal(largeImgSrc)}
         />
       </li>
